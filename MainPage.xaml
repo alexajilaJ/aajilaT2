@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aajilaT2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label 
+            Text="Calificaciones UISRAEL" 
+            TextColor="Red" 
+            FontSize="Medium"
+            VerticalTextAlignment="Center">
+            </Label>
+            <Picker x:Name="pkAlumnos" Title="Alumnos">
+                <Picker.Items>
+                    <x:String>Juan</x:String>
+                    <x:String>Luis</x:String>
+                    <x:String>Priscila</x:String>
+                    <x:String>Cristina</x:String>
+                    <x:String>Pedro</x:String>
+                </Picker.Items>
+            </Picker>
+            
+            <Label
+                Text="Fecha" />
+            
+            <DatePicker x:Name="dpFecha"
+            Date="04/08/2024"
+            Format="mm/dd/yyyy"/>
+
+            <Label
+                Text="Nota Seguimiento 1" />
+            <Entry x:Name="txtNota1"
+            Placeholder="Ingrese la segumiento 1"
+            Keyboard="Numeric">
+            </Entry>
+
+            <Label
+                Text="Nota Examen 1" />
+            <Entry x:Name="txtExamen"
+            Placeholder="Ingrese Examen 1"
+            Keyboard="Numeric">
+            </Entry>
+
+            <Label
+                Text="Nota Seguimiento 2" />
+            <Entry x:Name="txtNota2"
+            Placeholder="Ingrese la segumiento 2"
+            Keyboard="Numeric">
+            </Entry>
+
+            <Label
+                Text="Nota Examen 2" />
+            <Entry x:Name="txtExamen1"
+            Placeholder="Ingrese Examen 2"
+            Keyboard="Numeric">
+            </Entry>
+
+
+            <Button x:Name="btnCalcular"
+            Text="Calcular"
+            Clicked ="btnCalcular_Clicked"/>
+
+            <Button x:Name="btnRegresar"
+            Text="Limpiar"
+            Clicked ="btnRegresar_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
